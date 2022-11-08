@@ -1,0 +1,552 @@
+html, body, div, span, h1, h2, h3, h4, a, p, img, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Cinzel;
+}
+
+.big-container{
+    position: relative;
+}
+
+.container{
+    position: relative;
+}
+
+.top{
+    background: #19191b;
+    width:100%;
+    position: relative;
+    display: flex;
+}
+
+h1{
+    font-family:'Cinzel';
+    font-size:40px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.top img{
+    max-width: 460px;
+    margin: 20px auto;
+}
+
+.navbar{
+    display: none;
+    background: #6b6564;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 45%;
+    z-index: 1;
+}
+
+.navbar ul{
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0%);
+}
+
+.navbar-li{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar li:hover{
+    background: #3d3b3b;
+    transition: background .2s ease-out, transform .2s ease-out;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px 0px;
+}
+
+.navbar-offcanvas{
+    background: #6b6564;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 45%;
+    z-index: 1;
+}
+
+.navbar-offcanvas ul{
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0%);
+}
+
+.navbar-offcanvas-li{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar-offcanvas li:hover{
+    background: #3d3b3b;
+    transition: background .2s ease-out, transform .2s ease-out;
+    
+}
+
+.navbar-offcanvas a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px 0px;
+}
+
+.navbar-offcanvas{
+    transform: translateX(-100%);
+}
+
+.open{
+    transform: translateX(0);
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+.container-translate{
+    transform: translateX(45%);
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+.menu-button{
+    position: absolute;
+    margin: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+
+.fa-bars{
+    color: white;
+    border: none;
+}
+
+.bandbar{
+    position: relative;
+    display: flex;
+}
+
+.bandbar img{
+    width: 100%;
+}
+
+#img1{
+    display: block;
+}
+
+#img2{
+    display: none;
+}
+
+.info{
+    background: RGBA(255,255,255,0.8);
+    position: absolute;
+    bottom: 20px;
+}
+
+.info h2{
+    color:#0b0b0b;
+    font-weight: normal;
+    font-style:normal;
+    letter-spacing:10px;
+    font-size: 19.5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.news{
+    background-image:url("images/background_single.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding: 120px 0 0;
+    color: white;
+}
+
+.news h2{
+    font-weight: normal;
+    font-style:normal;
+}
+
+.latest-news img{
+    display: block;
+    padding-bottom: 15px;
+}
+
+
+.middle-1 img{
+    width: 100%;
+}
+
+.modal-entier{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.modal{
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    color: black;
+    padding: 1.5rem;
+    margin: 0.5rem;
+}
+
+.modal p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.geblockter{
+    color:#2d3748;
+}
+
+.geblockter h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.btn-modal{
+    padding: 0.5rem 1rem;
+    background-color: #2d3748;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    border-width: 1px;
+    border-color: transparent;
+    outline: 0;
+    font-family: inherit;
+    margin-right: 0.75rem;
+    cursor: pointer;
+}
+
+.cookies{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #667488;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+img{
+    width: 100%;
+}
+
+.text{
+    font-size: .875rem;
+    line-height: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.btn-news-annie a{
+    padding: 8px;
+    display: flex;
+    background-color: #f5f5f5;
+    color: #333333;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0px 15px 30px 15px;
+}
+
+.fa-chevron-right{
+    -webkit-text-stroke: 2px;
+    padding-top: 1px;
+    padding-left: 15px;
+}
+
+.btn-news-annie span{
+    text-align: center;
+    font-size: 14px;
+}
+
+.middle-2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.middle-2 h2{
+    padding-bottom: 20px;
+}
+
+.celtic-calendar p{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.celtic-calendar h3{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.celtic-calendar h3::after {
+    content:"";
+    display: block;
+    width:100%;
+    height: 1px;
+    margin-top: 50px;
+    background: white;
+}
+
+.upcoming-shows{
+    background-image:url("images/gigs_bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding: 120px 0 200px;
+    color: white;
+}
+
+.upcoming-shows h2{
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.footer{
+    background-color: black;
+}
+
+.social-media-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 0px;
+}
+
+.social-media-list img{
+    height: 30px;
+}
+
+.companies-list{
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 50%;
+}
+
+.footer-bottom{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom a, .footer-bottom span, .cookies-buttons button{
+    text-decoration: none;
+    color: white;
+}
+
+.fixed-cookies{
+    background-image:url("images/background_single.jpg");
+    background-size: cover;
+    color: white;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.cookies-text{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.cookies-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.cookies-buttons button{
+    background-color: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: none;
+    font-family:'Cinzel';
+}
+
+.left-buttons button:nth-child(2){
+    background-color: #42b983;
+}
+
+.displaynone{
+    display: none;
+}
+
+/* -------------------------------MEDIA QUERIES-------------------------------------- */
+
+@media screen and (min-width:320px){
+    .info{
+        left: 7%;
+        right: 7%;
+    }
+
+    .info h2{
+        letter-spacing: 5px;
+    }
+S
+    .modal{
+        padding: 0.5rem;
+    }
+
+    .checkbox input{
+        margin-right: 5px;
+    }
+
+    .latest-news{
+        display: block;
+    }
+
+    .latest-news p{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (min-width:375px){
+    
+    .fa-chevron-right{
+        padding-right: 10px;
+    }
+
+    .info > h2{
+        font-size: 19px;
+    }
+    
+}
+
+@media screen and (min-width:425px){
+    .cookies-buttons{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 15px;
+    }
+
+    .margin{
+        margin-inline:20px;
+    }
+
+    .info{
+        bottom: 50px;
+    }
+    .info h2{
+        font-size: 1.5rem;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (min-width:641px){ /* logos footers */
+    .companies-list{
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .companies-list > li{
+        margin-block: auto;
+        width: 15%;
+    }
+
+    .modal{
+        margin: 0;
+        right: 20%;
+        left: 20%;
+        bottom: 10%;
+    }
+    
+
+}
+
+@media screen and (min-width:768px){ /* titre + bandeau onglet + news et celtic */
+    .top img{
+        max-width: 70%;
+    }
+
+    .navbar-offcanvas{
+        display: none;
+    }
+
+    .navbar{
+        display: block;
+        background: #6b6564;
+        position: relative;
+        width: 100%;
+    }
+    
+    .navbar > ul{
+        display: flex;
+        margin: 0% 10%;
+    }
+
+    .menu-button{
+        display:none;
+    }
+
+    .middle-2{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    #img1{
+        display: none;
+    }
+
+    #img2{
+        display: block;
+    }
+
+    .info h2{
+        padding: 35px 30px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width:1024px){
+    .margin{
+        width: 65%;
+        margin-inline: auto;
+    }
+
+    .info{
+        left: 15%;
+        right: 15%;
+    }
+
+    .info h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:1440px){
+    
+}
